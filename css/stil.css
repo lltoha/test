@@ -1,11 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* grid områderne (grid-areas) defineres i klasser (.item1, .item2 osv.) */
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
-
+/* opsætning af css grid'et i tre rækker */
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -16,13 +20,14 @@
   background-color: #2196F3;
   padding: 10px;
 }
-
+/* design af div i class'en .grid-container */
 .grid-container div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
+/* ved skærmstørrelser under 600px vil grid-opsætningen placere sig oven på hinanden */
 @media (max-width: 600px) {
   .grid-container  {
     grid-template-areas:
