@@ -27,6 +27,7 @@ body {
   padding: 20px 0;
   font-size: 30px;
 }
+
 /* ved skærmstørrelser under 600px vil grid-opsætningen placere sig oven på hinanden */
 @media (max-width: 600px) {
   .grid-container  {
@@ -36,5 +37,14 @@ body {
       'main main main main main main'
       'right right right right right right'
       'footer footer footer footer footer footer';
+      grid-gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+  }
+  .grid-container div {
+    background-color: rgba(40, 145, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
   }
 }
